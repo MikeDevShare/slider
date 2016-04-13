@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+figure,figcaption{
+	display: block;
+}
+
+.slider {
+	 z-index: 9;
+	 width: 100%;
+	 height: 100%;
+	 overflow-x: hidden;
+	 margin: 0 0 7px;
+	background: none;
+	 position: relative;
+ }
+ .slider div, .slider figure {
+	 padding: 0;
+	 margin: 0;
+ }
+.slider .slide-wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+ .slider div figure {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	top: 0;
+	z-index: 100;
+	overflow-x: hidden;
+	display: block;
+	float: left;
+ }
+
+ .slider div figure.withFade {
+	position: absolute;
+	width: 100% !important;
+	height: auto;
+	top: 0;
+	z-index: 100;
+	overflow-x: hidden;
+	display: none;
+ }
+
+ .slider div figure.withFade img{
+ 	height: auto;
+ 	width: 100%;
+ }
+
+  .slider div figure.active{
+  	z-index: 300;
+  	display: block;
+  }
+ .slider .nav {
+	 position: relative;
+	padding: 7px;
+	 bottom: 0px; 
+	
+	 z-index: 1000;
+ }
+ .slider .nav span {
+	 opacity: 0.9;
+	 background: #fff;
+	 margin: 0 8px 0 0;
+	 width: 16px;
+	 height: 16px;
+	 border-radius: 8px;
+	 cursor: pointer;
+	 overflow: hidden;
+
+	 display: block;
+	 float: left;
+	 box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+ 	background: #2e9419;
+ }
+
+.slider div.figcaption{
+
+	text-align: justify;	
+	background:rgba(0,0,0,0.7);
+	padding: 1em;
+	color: #fff;
+	left: 0;
+	max-height: 20%;
+	display: block;
+	line-height: 22px;
+}
+
+.slider div.figcaption *{
+	color: #fff;
+}
+
+.slider .for-clear-situation{
+	width: 100%;
+
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+
+ #csSlider{
+ 	max-width: 824px;
+ 	width: 100%;
+ 	margin: 2em auto;
+ 	height: auto;
+ }
